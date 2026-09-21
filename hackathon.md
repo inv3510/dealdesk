@@ -2,7 +2,7 @@
 
 Realtime deal room for real estate wholesalers. Paste a listing link or enter a property by hand, get an instant deal analysis, email the seller, and manage the replies. Everything updates live.
 
-Live app: LIVE_URL_HERE
+Live app: https://next-anteater-454.convex.site
 Repo: https://github.com/inv3510/dealdesk
 
 ## What it does

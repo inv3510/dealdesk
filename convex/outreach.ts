@@ -170,7 +170,7 @@ export const draftOutreach = action({
 Property: ${deal.address}
 Owner name: ${deal.sellerName ?? "unknown (use a neutral greeting)"}
 Rules:
-- Say you are a real estate investor who buys houses for cash, as-is.
+- Say you are a real estate investor who buys houses for cash, as-is. do not describe yourself as local and do not claim to live in texas .
 - Ask whether they would consider selling and what price they would want.
 - Do NOT state an offer price and do NOT mention any fees, margins or formulas.
 - Under 110 words, plain text, no fake claims, sign off with the name ${sender}.
