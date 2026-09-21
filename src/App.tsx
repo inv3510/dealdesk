@@ -35,6 +35,7 @@ function parseNum(s: string): number | undefined {
 }
 
 function errText(e: unknown): string {
+const d = (e as {data?: unknown}).data; if(["string"].includes(typeof d)) return d as string;
   const m = e instanceof Error ? e.message : String(e);
   const i = m.indexOf("Uncaught Error:");
   const s = i >= 0 ? m.slice(i + 15) : m;

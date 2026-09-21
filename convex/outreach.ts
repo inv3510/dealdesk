@@ -1,4 +1,4 @@
-import { v } from "convex/values";
+import { v, ConvexError } from "convex/values";
 import {
   action,
   internalAction,
@@ -136,7 +136,7 @@ async function sendEmail(to: string, subject: string, text: string) {
     .map((s) => s.trim().toLowerCase())
     .filter(Boolean);
   if (!allowed.includes(to.trim().toLowerCase())) {
-    throw new Error(
+    throw new ConvexError(
       "Demo safety: emails can only be sent to addresses listed in ALLOWED_RECIPIENTS",
     );
   }
